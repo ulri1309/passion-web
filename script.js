@@ -20,7 +20,6 @@ async function hentData() {
   const respons = await fetch(url, options);
   lande = await respons.json();
   console.log("land", lande);
-  vis();
 }
 
 hentData();
