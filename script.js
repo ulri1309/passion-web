@@ -1,4 +1,3 @@
-
 // Henter URL Link
 const url = "https://hiking-3bbe.restdb.io/rest/hiking";
 
