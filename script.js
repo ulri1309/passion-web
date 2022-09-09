@@ -4,7 +4,7 @@ const url = "https://hiking-3bbe.restdb.io/rest/hiking";
 
 // Henter API
 const options = {
-  header: { "x-apikey": "631b3153fdc15b0265f17281" },
+  headers: { "x-apikey": "631b3153fdc15b0265f17281" },
 };
 
 // Globale variabel
