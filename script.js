@@ -10,11 +10,11 @@ const options = {
 // Globale variabel
 let lande;
 
-// // Tjekker at DOM er loaded
-// document.addEventListener("DOMContentLoaded", start);
-// function start() {
-//   console.log("loaded");
-// }
+// Tjekker at DOM er loaded
+document.addEventListener("DOMContentLoaded", start);
+function start() {
+  console.log("loaded");
+}
 
 // Vi henter data med fetch funktion vi asynkron funktion
 async function hentData() {
