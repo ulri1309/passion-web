@@ -4,6 +4,10 @@ main {
   margin: 0 auto;
 }
 
+html {
+  background-color: #eef4e8;
+}
+
 img {
   max-width: 100%;
 }
