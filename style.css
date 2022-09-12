@@ -1,0 +1,73 @@
+/* Generelt */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* fonts */
+@font-face {
+  font-family: BebasNeue;
+  src: url(fonts/BebasNeue/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+  font-family: SIL;
+  src: url(fonts/Shadows_Into_Light/ShadowsIntoLight-Regular.ttf);
+}
+/*************** main (filtrering/loop view) *********/
+/* grid - loop view */
+section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 4fr));
+}
+
+/* design header - loop view */
+header {
+  text-align: center;
+}
+
+nav {
+  list-style: none;
+  line-height: 2rem;
+  display: inline;
+}
+
+button {
+  font-family: BebasNeue;
+  color: #5c6336;
+  font-size: 1rem;
+  border-style: none;
+  background-color: white;
+}
+
+button:hover {
+  color: #bb4726;
+}
+
+.valgt {
+  color: #bb4726;
+}
+
+header h2 {
+  font-family: BebasNeue;
+  color: #bb4726;
+  font-weight: lighter;
+}
+
+header h1 {
+  font-family: SIL;
+  color: #5c6336;
+}
+
+/* design indhold - loop view */
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1,
+h2 {
+  font-family: BebasNeue;
+}

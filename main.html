@@ -8,27 +8,34 @@
     <title>Globe Travels</title>
   </head>
   <body>
+    <div>
+      <img src="" alt="LOGO" />
+    </div>
     <header>
-      <div>
-        <img src="" alt="LOGO" />
-
-        <nav>
-          <button></button>
-          <!--Her skal slef være flere buttons, når de er oprettet-->
-        </nav>
-      </div>
+      <h1>EXPLORE</h1>
+      <nav>
+        <button data-land="alle" class="valgt">Alle</button>
+        <button data-land="New Zealand">New Zealand</button>
+        <button data-land="Alaska">Alaska</button>
+        <button data-land="Serbia">Serbia</button>
+        <button data-land="Norway">Norway</button>
+      </nav>
+      <h2></h2>
     </header>
 
-    <main id="holder">
+    <main>
+      <!-- section er der indholdet fra templaten kommer i -->
+      <section></section>
       <template>
         <article>
           <img src="" alt="" />
           <h2></h2>
+          <h3></h3>
           <p></p>
         </article>
       </template>
 
-      <!--For en sikkerheds skyld, laver jeg en section til modal-view-->
+      <!-- For en sikkerheds skyld, laver jeg en section til modal-view
 
       <div id="singleview">
         <article>
@@ -37,7 +44,7 @@
           <p></p>
           <p></p>
         </article>
-      </div>
+      </div> -->
     </main>
     <script src="script.js"></script>
   </body>
