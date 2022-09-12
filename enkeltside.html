@@ -62,7 +62,8 @@
         document.querySelector("img").src = "billeder/" + hike.billedfil;
         document.querySelector("h1").textContent = hike.land;
         document.querySelector("h2").textContent = hike.mountain;
-        document.querySelector("h3").textContent = hike.difficulty;
+        document.querySelector("h3").textContent =
+          "Difficulty: " + hike.difficulty;
         document.querySelector("p").textContent = hike.longDescription;
         // Kalder funktion tilbageTilPersongalleri
         document
