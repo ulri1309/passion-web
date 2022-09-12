@@ -1,0 +1,61 @@
+html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-image: url(billeder/landingpage.jpg);
+  background-position: 10%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* fonts */
+
+@font-face {
+  font-family: BebasNeue;
+  src: url(fonts/BebasNeue/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+  font-family: SIL;
+  src: url(fonts/Shadows_Into_Light/ShadowsIntoLight-Regular.ttf);
+}
+
+/* HAMBURGER MENU */
+
+.logo {
+  max-width: 20%;
+}
+
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: "BebasNeue";
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: #5c6336;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  color: #bb4726;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
