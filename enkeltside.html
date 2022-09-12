@@ -9,22 +9,73 @@
   </head>
   <body>
     <header>
-      <a href="">LOGO</a>
+      <a href="loop.html"><img src="billeder/logo_final.png" alt="logo" /></a>
     </header>
 
     <main>
-      <article>
+      <section class="grid_1-1">
         <img src="" alt="" />
-      </article>
-
-      <section>
         <h1></h1>
         <h2></h2>
+        <h3></h3>
         <p></p>
       </section>
+      <button>Tilbage</button>
     </main>
 
     <footer>@Globe Travels</footer>
-    <script></script>
+    <script>
+      // For at hente data fra linket i javascript.js
+      const urlParams = new URLSearchParams(window.location.search);
+      // For at få fat på id'et
+      const id = urlParams.get("id");
+
+      // fortæller browseren at vi vil se det enkelte id
+      const url = `https://hiking-3bbe.restdb.io/rest/hiking/${id}`;
+
+      // Nye nøgle
+      const options = {
+        headers: {
+          "Content-Type": "application/json",
+          "x-apikey": "631b3153fdc15b0265f17281",
+        },
+      };
+
+      // Globale variabel - kunne stå json i stedet for.
+      let hike;
+
+      // Tjekker at DOM er loaded
+      document.addEventListener("DOMContentLoaded", hentData);
+
+      // Vi henter data med fetch funktion via asynkron funktion
+      async function hentData() {
+        const respons = await fetch(url, options);
+        //vores json fil
+        hike = await respons.json();
+        // kalder vi hikes funktion - gør det muligt at se alle hikes
+        visHike();
+      }
+
+      // funktion visHike viser enkelt objekt
+      function visHike() {
+        // Indhold i vores section
+        document.querySelector("img").src = "billeder/" + hike.billedfil;
+        document.querySelector("h1").textContent = hike.land;
+        document.querySelector("h2").textContent = hike.mountain;
+        document.querySelector("h3").textContent =
+          "Difficulty: " + hike.difficulty;
+        document.querySelector("p").textContent = hike.longDescription;
+        // Kalder funktion tilbageTilPersongalleri
+        document
+          .querySelector("button")
+          .addEventListener("click", tilbageTilHikes);
+      }
+
+      function tilbageTilHikes() {
+        // Gør vi kommer til persongalleri
+        history.back();
+      }
+      hentData();
+    </script>
   </body>
 </html>
