@@ -11,16 +11,13 @@ const options = {
 let hikes;
 
 // Tjekker at DOM er loaded
-document.addEventListener("DOMContentLoaded", start);
-function start() {
-  console.log("loaded");
-}
+document.addEventListener("DOMContentLoaded", hentData);
 
 // Vi henter data med fetch funktion via asynkron funktion
 async function hentData() {
   const respons = await fetch(url, options);
   hikes = await respons.json();
-  console.log("lande", hikes);
+  visHikes();
 }
 
 // ************** filtrering ****************************
@@ -62,7 +59,7 @@ const indhold = document.querySelector("section");
 const template = document.querySelector("template").content;
 
 function visHikes() {
-  console.log(hikes);
+  console.log(filter);
   // fjerner indholdet i templaten
   indhold.textContent = "";
 
@@ -76,7 +73,7 @@ function visHikes() {
         .addEventListener("click", () => visDetaljer(hike));
 
       // Indhold
-      klon.querySelector("img").src = "billeder/" + hike.image + ".webp";
+      klon.querySelector("img").src = "billeder/" + hike.billedfil;
       klon.querySelector("h2").textContent = hike.land;
       klon.querySelector("h3").textContent = hike.mountain;
       klon.querySelector("p").textContent = hike.shortDescription;
@@ -89,6 +86,3 @@ function visHikes() {
 function visDetaljer(hike) {
   location.href = `enkeltside.html?id=${hike._id}`;
 }
-
-// Henter data
-hentData();
