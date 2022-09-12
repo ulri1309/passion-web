@@ -76,7 +76,7 @@ function visHikes() {
         .addEventListener("click", () => visDetaljer(hike));
 
       // Indhold
-      klon.querySelector("img").src = "billeder/" + hike.image + "-md.webp";
+      klon.querySelector("img").src = "billeder/" + hike.image + ".webp";
       klon.querySelector("h2").textContent = hike.land;
       klon.querySelector("h3").textContent = hike.mountain;
       klon.querySelector("p").textContent = hike.shortDescription;
