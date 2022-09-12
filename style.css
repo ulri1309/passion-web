@@ -24,7 +24,7 @@ img {
 }
 /*************** main (filtrering/loop view) *********/
 /* grid - loop view */
-section {
+.loop_section {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 4fr));
   gap: 1rem;

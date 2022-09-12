@@ -10,27 +10,80 @@
   </head>
   <body>
     <header>
-      <a href="loop.html"><img src="billeder/logo_final.png" alt="logo" /></a>
+      <div>
+        <a href="loop.html"><img src="billeder/logo_final.png" alt="logo" /></a>
+      </div>
+
+      <nav class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Home</a>
+        <a href="loop.html">EXPLORE</a>
+        <a href="#about">ABOUT</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </nav>
     </header>
 
     <main>
-      <footer>@Globe Travels</footer>
+      <h1 class="landing_h1">
+        EXPLORING <br />
+        THE WORLD <br />
+        ON FOOT
+      </h1>
+      <section class="landing_titel">
+        <h2>GLOBE TRAVELS</h2>
+        <h3>TOP RATED HIKES</h3>
+      </section>
+
+      <section class="tophikes">
+        <article>
+          <img src="billeder/newzealand_hike.webp" alt="hiking" />
+          <h2>NEW ZEALAND</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, ut!</p>
+        </article>
+
+        <article>
+          <img src="billeder/serbia_hike.webp" alt="hiking" />
+          <h2>SERBIA</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, ut!</p>
+        </article>
+
+        <article>
+          <img src="billeder/glacier_hike.webp" alt="glacier" />
+          <h2>ALASKA</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, ut!</p>
+        </article>
+      </section>
+      <div class="text-center"><button>SEE ALL</button></div>
+
+      <footer>
+        <address>
+          <h2>GLOBE TRAVELS HEADQUARTERS</h2>
+          <p>
+            Guldbergsgade 29N <br />
+            2200 Copenhagen N
+          </p>
+        </address>
+        <section class="socials">
+          <a href="#"><img src="billeder/facebook.png" alt="facebook" /></a>
+          <a href="#"><img src="billeder/insta_png.png" alt="instagram" /></a>
+        </section>
+        <section class="sporgsmal">
+          <h2>Questions?</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis vel est maiores? Iste sint similique quo magni nulla debitis libero.</p>
+        </section>
+      </footer>
     </main>
     <script>
-      const hamburger = document.querySelector(".hamburger");
-      const navMenu = document.querySelector(".nav-menu");
-
-      hamburger.addEventListener("click", () => {
-        hamburger.classList.toggle("active");
-        navMenu.classList.toggle("active");
-      });
-
-      document.querySelectorAll(".nav-link").forEach((n) =>
-        n.addEventListener("click", () => {
-          hamburger.classList.remove("active");
-          navMenu.classList.remove("active");
-        })
-      );
+      /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
     </script>
   </body>
 </html>
