@@ -52,6 +52,7 @@ button {
   border-style: none;
   background-color: #eef4e8;
   font-weight: lighter;
+  cursor: pointer;
 }
 
 button:hover {
@@ -157,5 +158,4 @@ h2 {
   padding: 10px 20px;
   border-radius: 20px;
   border-color: black solid 0.5px;
-  cursor: pointer;
 }
