@@ -7,7 +7,7 @@ const options = {
   headers: { "x-apikey": "631b3153fdc15b0265f17281" },
 };
 
-// Globale variabel
+// Globale variabel - kunne stå json i stedet for.
 let hikes;
 
 // Tjekker at DOM er loaded
@@ -16,7 +16,9 @@ document.addEventListener("DOMContentLoaded", hentData);
 // Vi henter data med fetch funktion via asynkron funktion
 async function hentData() {
   const respons = await fetch(url, options);
+  //vores json fil
   hikes = await respons.json();
+  // kalder vi hikes funktion - gør det muligt at se alle hikes
   visHikes();
 }
 
@@ -62,9 +64,10 @@ function visHikes() {
   console.log(filter);
   // fjerner indholdet i templaten
   indhold.textContent = "";
-
+  //For hvert objekt i vores array skal der ske det der står inden i funktionen
   hikes.forEach((hike) => {
     console.log("land", hike.land);
+    // Hvis filter er lig med land viser den en bestemt gruppe af lande ellers viser den alle.
     if (filter == hike.land || filter == "alle") {
       const klon = template.cloneNode(true);
       // Laver artiklen klikbar, for at kunne lave nyt vindue
