@@ -89,3 +89,5 @@ function visHikes() {
 function visDetaljer(hike) {
   location.href = `enkeltside.html?id=${hike._id}`;
 }
+
+
