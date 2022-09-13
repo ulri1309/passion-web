@@ -29,11 +29,9 @@
   list-style-type: none;
   display: flex;
   gap: 20px;
-  
 }
 .primary_nav a {
   text-decoration: none;
-  
 }
 
 /* scroll button mobile */
@@ -114,15 +112,16 @@ a img {
 
 .landing_titel h2 {
   color: #5c6336;
-  font-size: 2rem;
+  font-size: 3rem;
   font-style: italic;
   text-align: center;
+  padding-top: 90px;
 }
 
 .landing_titel h3 {
   font-family: SIL;
-  font-size: 1.4rem;
-  padding-bottom: 20px;
+  font-size: 1.6rem;
+  padding-bottom: 40px;
 }
 
 .landing_titel h3,
@@ -182,7 +181,25 @@ address h2,
 }
 
 @media (min-width: 800px) {
-    .background-image {
-        background-position: 0;
-    }
+  .background-image {
+    background-position: top;
+    grid-template-columns: 1fr;
+  }
+  .landing_h1 {
+    text-align: center;
+    font-size: 6rem;
+    grid-column: 1/1;
+    grid-row: 1/1;
+    place-self: center center;
+  }
+
+  .landing_titel h2 {
+    color: #5c6336;
+    font-size: 4rem;
+    font-style: italic;
+    text-align: center;
+  }
+  .landing_titel h3 {
+    font-size: 2rem;
+  }
 }
