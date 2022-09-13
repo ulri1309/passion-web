@@ -1,9 +1,14 @@
-html {
+* {
   margin: 0;
+  padding: 0;
 }
 
-body {
-  margin: 0;
+.background-image {
+  background-image: url("billeder/landingpage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: 10%;
 }
 
 /* body {
@@ -114,6 +119,7 @@ a img {
 h2 {
   text-align: center;
   color: #bb4726;
+  padding: 20px;
 }
 .text-center {
   text-align: center;
@@ -151,8 +157,19 @@ footer {
   flex-direction: column;
   align-items: center;
 }
+address:nth-child(1) {
+  text-align: center;
+}
 
 address h2,
 .sporgsmal h2 {
   color: black;
+}
+
+@media (min-width: 1000px) {
+  .tophikes {
+    display: flex;
+    padding: 30px;
+    gap: 20px;
+  }
 }
