@@ -1,4 +1,9 @@
 /* Generelt */
+* {
+  margin: 0;
+  padding: 0;
+}
+
 main {
   max-width: 1200px;
   margin: 0 auto;
@@ -79,11 +84,13 @@ header h1 {
 /* design indhold - loop view */
 p {
   font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 15px;
 }
 h1,
 h2,
 h3 {
   font-family: BebasNeue;
+  margin-bottom: 15px;
 }
 
 /* hover box */
@@ -192,7 +199,7 @@ address h2,
 
 .grid_1-1 h1 {
   text-align: center;
-  color: #bb4726;
+  color: #5c6336;
   font-size: 3rem;
   /* order: 1; */
 }
@@ -203,11 +210,26 @@ address h2,
 }
 
 .grid_1-1 h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  color: #bb4726;
 }
 
 .grid_1-1 article h1 {
   flex: 1;
+}
+
+.grid_1-1 {
+  background-color: white;
+  margin-bottom: 50px;
+}
+
+.tilbage {
+  font-family: BebasNeue;
+  color: white;
+  background-color: #5c6336;
+  padding: 10px 20px;
+  border-radius: 50px;
+  margin-bottom: 10px;
 }
 
 @media (min-width: 811px) {
@@ -229,6 +251,6 @@ address h2,
 
   .grid_1-1 h1 {
     text-align: left;
-    margin-top: -8px;
+    /* margin-top: -8px; */
   }
 }
