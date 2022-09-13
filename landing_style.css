@@ -14,7 +14,6 @@
   grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
-
 /* scroll button mobile */
 
 /* From uiverse.io by @mrhyddenn */
@@ -73,9 +72,6 @@
 h3 {
   font-family: "BebasNeue";
   color: #bb4726;
-}
-a img {
-  padding: 10px;
 }
 
 .landing_h1 {
@@ -138,30 +134,14 @@ button {
   border-radius: 20px;
 }
 
-footer {
-  background-color: #5c6336;
-  padding: 20px;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 30px;
-}
-address:nth-child(1) {
-  text-align: center;
-}
 
-address h2,
-.sporgsmal h2 {
-  color: black;
-}
 .tophikes {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 3fr));
   gap: 20px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 768px) {
   .background-image {
     background-position: top;
     grid-template-columns: 1fr;
@@ -184,11 +164,8 @@ address h2,
     font-size: 2rem;
   }
 
-  footer {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 3fr));
-  }
-
+  
+  
   address:nth-child(1),
   address h2 {
     text-align: left;

@@ -8,10 +8,28 @@
     <title>Globe Travels</title>
   </head>
   <body>
-    <div>
-      <a href="index.html"><img src="billeder/logo_final.png" alt="logo" /></a>
-    </div>
-    <header class="filteringsheader">
+    <header class="banner">
+      <nav class="navbar">
+        <a class="logo" href="index.html"><img src="billeder/logo_final.png" alt="logo" /></a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="loop.html">EXPLORE</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">TIPS</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">ABOUT</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+    <div class="filteringsheader">
       <h1>EXPLORE</h1>
       <nav>
         <button data-land="alle" class="valgt">Alle</button>
@@ -21,7 +39,7 @@
         <button data-land="Norway">Norway</button>
       </nav>
       <h2>Alle</h2>
-    </header>
+    </div>
 
     <main>
       <!-- section er der indholdet fra templaten kommer i -->
@@ -40,25 +58,24 @@
         </article>
       </template>
     </main>
-    <footer>
+     <footer>
       <address>
         <h2>GLOBE TRAVELS HEADQUARTERS</h2>
+        <p>+45 11 22 33 44</p>
         <p>
           Guldbergsgade 29N <br />
           2200 Copenhagen N
         </p>
       </address>
-      <section class="socials">
       <div class="socials">
-          <a href="#"><i class="bx bxl-instagram"></i></a>
-          <a href="#"><i class="bx bxl-facebook"></i></a>
-      </section>
+        <div class="socials">
+          <img src="billeder/facebook-logo-24.png" alt="face" />
+          <img src="billeder/instagram-logo-24.png" alt="insta" />
+        </div>
+      </div>
       <section class="sporgsmal">
         <h2>Questions?</h2>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis
-          vel est maiores? Iste sint similique quo magni nulla debitis libero.
-        </p>
+        <p>Do you have any questions for us? Head on over to our Instagram or Facebook and DM us!</p>
       </section>
     </footer>
     <script src="script.js"></script>

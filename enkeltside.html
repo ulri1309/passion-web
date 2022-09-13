@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="da">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,8 +8,26 @@
     <title>Globe Travels</title>
   </head>
   <body>
-    <header>
-      <a href="loop.html"><img src="billeder/logo_final.png" alt="logo" /></a>
+    <header class="banner">
+      <nav class="navbar">
+        <a class="logo" href="index.html"><img src="billeder/logo_final.png" alt="logo" /></a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="loop.html">EXPLORE</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">TIPS</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">ABOUT</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
     </header>
 
     <main>
@@ -23,6 +41,7 @@
           <h3 class="h3_enkelt"></h3>
           <p></p>
         </article>
+        <button class="tilbage_mobil">Back</button>
       </section>
     </main>
 
@@ -35,18 +54,15 @@
           2200 Copenhagen N
         </p>
       </address>
-      <section class="socials">
+      <div class="socials">
         <div class="socials">
           <img src="billeder/facebook-logo-24.png" alt="face" />
           <img src="billeder/instagram-logo-24.png" alt="insta" />
         </div>
-      </section>
+      </div>
       <section class="sporgsmal">
         <h2>Questions?</h2>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis
-          vel est maiores? Iste sint similique quo magni nulla debitis libero.
-        </p>
+        <p>Do you have any questions for us? Head on over to our Instagram or Facebook and DM us!</p>
       </section>
     </footer>
     <script>
@@ -84,17 +100,13 @@
       // funktion visHike viser enkelt objekt
       function visHike() {
         // Indhold i vores section
-        document.querySelector(".enkeltbillede").src =
-          "billeder/" + hike.billedfil;
+        document.querySelector(".enkeltbillede").src = "billeder/" + hike.billedfil;
         document.querySelector("h1").textContent = hike.land;
         document.querySelector("h2").textContent = hike.mountain;
-        document.querySelector("h3").textContent =
-          "Difficulty: " + hike.difficulty;
+        document.querySelector("h3").textContent = "Difficulty: " + hike.difficulty;
         document.querySelector("p").textContent = hike.longDescription;
         // Kalder funktion tilbageTilPersongalleri
-        document
-          .querySelector("button")
-          .addEventListener("click", tilbageTilHikes);
+        document.querySelector("button").addEventListener("click", tilbageTilHikes);
       }
 
       function tilbageTilHikes() {
@@ -102,6 +114,22 @@
         history.back();
       }
       hentData();
+
+      // Hamburger menu
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-menu");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      });
+
+      document.querySelectorAll(".nav-link").forEach((n) =>
+        n.addEventListener("click", () => {
+          hamburger.classList.remove("active");
+          navMenu.classList.remove("active");
+        })
+      );
     </script>
   </body>
 </html>

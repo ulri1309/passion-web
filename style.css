@@ -28,22 +28,21 @@ img {
   src: url(fonts/Shadows_Into_Light/ShadowsIntoLight-Regular.ttf);
 }
 
-
 /* *********** Header ************** */
 .banner {
   position: fixed;
+  z-index: 1;
 }
 .logo {
   margin-inline: 40px;
 }
 
-
-
 .nav-menu li {
   font-family: BebasNeue, sans-serif;
   list-style: none;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   text-align: center;
+  margin-right: 20px;
 }
 a {
   color: #5c6336;
@@ -56,13 +55,12 @@ a {
   justify-content: space-between;
   align-items: center;
   margin-right: 20px;
-  
 }
 .nav-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 35px;
+  gap: 85px;
 }
 
 .nav-link {
@@ -73,7 +71,7 @@ a {
 }
 
 .navbar a:hover {
-  color: #bb4726;
+  color: #5c6336;
 }
 
 .hamburger {
@@ -97,7 +95,7 @@ a {
     margin-inline: 0;
   }
 
-  .logo img{
+  .logo img {
     width: 20%;
   }
   .navbar {
@@ -135,9 +133,6 @@ a {
   }
 }
 
-
-
-
 /*************** main (filtrering/loop view) *********/
 /* grid - loop view */
 .loop_section {
@@ -151,14 +146,11 @@ a {
   text-align: center;
 }
 
-a img {
-  width: 10%;
-}
-
 nav {
   list-style: none;
   line-height: 2rem;
-  display: inline;
+  /* display: inline; */
+  padding-bottom: 20px;
 }
 
 button {
@@ -169,6 +161,7 @@ button {
   background-color: #eef4e8;
   font-weight: lighter;
   cursor: pointer;
+  padding: 10px;
 }
 
 button:hover {
@@ -179,17 +172,19 @@ button:hover {
   color: #bb4726;
 }
 
-header h2 {
+.filteringsheader h2 {
   font-family: BebasNeue;
   color: #bb4726;
   font-size: 2rem;
   font-weight: lighter;
+  padding-bottom: 15px;
 }
 
-header h1 {
+.filteringsheader h1 {
   font-family: SIL;
   color: #5c6336;
   font-size: 3rem;
+  padding-top: 100px;
 }
 
 /* design indhold - loop view */
@@ -268,6 +263,7 @@ h3 {
 .red {
   color: #bb4726;
   text-align: center;
+  margin-block: 20px;
 }
 .facebook,
 .instagram {
@@ -292,8 +288,18 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 30px;
 }
-
+address:nth-child(1) {
+  text-align: center;
+}
+.sporgsmal {
+  text-align: center;
+}
+address h2,
+.sporgsmal h2 {
+  color: black;
+}
 address h2,
 .sporgsmal h2 {
   color: black;
@@ -302,36 +308,42 @@ address h2,
 /****** ENKELTSIDE *******/
 
 .grid_1-1 {
-  display: flex;
-  flex-direction: column;
-  grid-template-columns: 1fr;
-  gap: 2.5rem;
+  margin-bottom: 20px;
+}
+.grid_1-1 img {
+  margin-top: 100px;
+}
+
+.grid_1-1 article {
+  padding-top: 20px;
+  background-color: white;
 }
 
 .grid_1-1 h1 {
-  text-align: center;
+  text-align: left;
   color: #5c6336;
   font-size: 3rem;
-  /* order: 1; */
+  padding-left: 20px;
 }
-
+.grid_1-1 p {
+  padding-inline: 20px;
+  line-height: 2rem;
+  padding-bottom: 20px;
+}
 .grid_1-1 h2 {
   color: #bb4726;
   font-size: 2.5rem;
+  padding-left: 20px;
 }
 
 .grid_1-1 h3 {
   font-size: 1.5rem;
   color: #bb4726;
+  padding-left: 20px;
 }
 
 .grid_1-1 article h1 {
   flex: 1;
-}
-
-.grid_1-1 {
-  background-color: white;
-  margin-bottom: 50px;
 }
 
 .tilbage {
@@ -341,9 +353,19 @@ address h2,
   padding: 10px 20px;
   border-radius: 50px;
   margin-bottom: 10px;
+  display: none;
+}
+.tilbage_mobil {
+  font-family: BebasNeue;
+  color: white;
+  background-color: #5c6336;
+  padding: 10px 20px;
+  border-radius: 50px;
+  margin-bottom: 10px;
+  margin-left: 40%;
 }
 
-@media (min-width: 811px) {
+@media (min-width: 768px) {
   .grid_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -363,5 +385,20 @@ address h2,
   .grid_1-1 h1 {
     text-align: left;
     /* margin-top: -8px; */
+  }
+
+  /* Loop view */
+  .logo > img:nth-child(1) {
+    max-width: 10%;
+    padding-top: 10px;
+  }
+
+  footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  address:nth-child(1) {
+    text-align: left;
   }
 }
