@@ -50,12 +50,13 @@
 /* *********** burger-menu **************** */
 .main-menu {
   font-family: BebasNeue;
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
 }
 
 .main-menu ul a {
   text-decoration: none;
-  /* Få elementerne til at stå ved siden af hinanden */
-  display: flex;
 }
 
 /* scroll button mobile */
@@ -135,15 +136,16 @@ a img {
 
 .landing_titel h2 {
   color: #5c6336;
-  font-size: 2rem;
+  font-size: 3rem;
   font-style: italic;
   text-align: center;
+  padding-top: 90px;
 }
 
 .landing_titel h3 {
   font-family: SIL;
-  font-size: 1.4rem;
-  padding-bottom: 20px;
+  font-size: 1.6rem;
+  padding-bottom: 40px;
 }
 
 .landing_titel h3,
@@ -178,6 +180,7 @@ button {
   padding-inline: 40px;
   display: inline;
   text-align: center;
+  border-radius: 20px;
 }
 
 footer {
@@ -187,6 +190,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 30px;
 }
 address:nth-child(1) {
   text-align: center;
@@ -204,6 +208,38 @@ address h2,
 
 @media (min-width: 800px) {
   .background-image {
-    background-position: 0;
+    background-position: top;
+    grid-template-columns: 1fr;
+  }
+  .landing_h1 {
+    text-align: center;
+    font-size: 6rem;
+    grid-column: 1/1;
+    grid-row: 2/4;
+    place-self: center center;
+  }
+
+  .landing_titel h2 {
+    color: #5c6336;
+    font-size: 4rem;
+    font-style: italic;
+    text-align: center;
+  }
+  .landing_titel h3 {
+    font-size: 2rem;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 3fr));
+  }
+
+  address:nth-child(1),
+  address h2 {
+    text-align: left;
+  }
+
+  address {
+    padding: 40px;
   }
 }
