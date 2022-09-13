@@ -55,6 +55,11 @@ a img {
   text-align: center;
 }
 
+.landing_titel h3 {
+  font-family: SIL;
+  font-size: 1.4rem;
+}
+
 .landing_titel h3,
 h2 {
   text-align: center;
@@ -70,6 +75,7 @@ article img {
   object-fit: cover;
   width: 500px;
   height: 500px;
+  margin: 10px;
 }
 
 article h2,
@@ -105,17 +111,11 @@ address h2,
 .sporgsmal h2 {
   color: black;
 }
-
 .tophikes {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 3fr));
+  gap: 20px;
 }
 
-
-@media (min-width: 1000px) {
-  .tophikes {
-    padding: 30px;
-    flex-direction: row;
-    gap: 20px;
-  }
+@media (min-width: 800px) {
 }
