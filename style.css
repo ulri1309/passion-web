@@ -174,3 +174,11 @@ address h2,
 .sporgsmal h2 {
   color: black;
 }
+
+/****** ENKELTSIDE *******/
+
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+  gap: 4rem;
+}
