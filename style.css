@@ -366,10 +366,10 @@ address h2,
 }
 
 @media (min-width: 768px) {
+  /* enkeltside */
   .grid_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2.5rem;
   }
 
   .grid_1-1 img {
@@ -377,6 +377,7 @@ address h2,
     width: 100%;
     height: 100%;
     object-fit: cover;
+    margin-top: 0;
   }
   .grid_1-1 article {
     grid-column: 2;
@@ -385,6 +386,13 @@ address h2,
   .grid_1-1 h1 {
     text-align: left;
     /* margin-top: -8px; */
+  }
+  .tilbage {
+    display: block;
+  }
+
+  .tilbage_mobil {
+    display: none;
   }
 
   /* Loop view */
