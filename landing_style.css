@@ -8,18 +8,99 @@
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
-  background-position: 10%;
+  background-position: 14%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
-/* body {
-  background-image: url(billeder/landingpage.jpg);
-  background-position: 10%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-  margin: 0;
-  overflow: hidden;
-} */
+/* *********** Header ************** */
+
+/* Gør at nav flytter til højre for logo */
+.logo {
+  margin-right: auto;
+}
+
+/* placerer menuen til højre */
+.banner {
+  display: flex;
+  align-items: end;
+  position: fixed;
+}
+
+/* styling af placering af indholdet i nav */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  list-style: none;
+  gap: 10px;
+}
+
+/* Styling af tekst i nav */
+.navigation a {
+  color: white;
+  font-size: 2rem;
+}
+
+.navigation :hover {
+  color: #bb4726;
+}
+
+/* *********** burger-menu **************** */
+.main-menu {
+  font-family: BebasNeue;
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.main-menu ul a {
+  text-decoration: none;
+}
+
+/* scroll button mobile */
+
+/* From uiverse.io by @mrhyddenn */
+.mouse-btn {
+  margin: 10px auto;
+  width: 40px;
+  height: 80px;
+  border: 3px solid white;
+  border-radius: 20px;
+  display: flex;
+}
+.container_mouse h1 {
+  color: white;
+  text-align: center;
+}
+
+.container_mouse {
+  grid-row: 4;
+  grid-column: span 2;
+}
+
+.mouse-scroll {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+  margin: auto;
+  animation: scrolling13 1s linear infinite;
+}
+
+@keyframes scrolling13 {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(20px);
+  }
+}
 
 /* fonts */
 
@@ -40,25 +121,31 @@ h3 {
 a img {
   width: 20%;
   padding: 10px;
-  position: fixed;
 }
 
 .landing_h1 {
   color: white;
   font-size: 3rem;
   text-align: end;
+  place-self: end;
+  grid-column: 2;
+  grid-row: 2;
+  padding-right: 20px;
+  text-shadow: black 5px 5px 5px;
 }
 
 .landing_titel h2 {
   color: #5c6336;
-  font-size: 2rem;
+  font-size: 3rem;
   font-style: italic;
   text-align: center;
+  padding-top: 90px;
 }
 
 .landing_titel h3 {
   font-family: SIL;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
+  padding-bottom: 40px;
 }
 
 .landing_titel h3,
@@ -93,6 +180,7 @@ button {
   padding-inline: 40px;
   display: inline;
   text-align: center;
+  border-radius: 20px;
 }
 
 footer {
@@ -102,6 +190,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 30px;
 }
 address:nth-child(1) {
   text-align: center;
@@ -118,4 +207,39 @@ address h2,
 }
 
 @media (min-width: 800px) {
+  .background-image {
+    background-position: top;
+    grid-template-columns: 1fr;
+  }
+  .landing_h1 {
+    text-align: center;
+    font-size: 6rem;
+    grid-column: 1/1;
+    grid-row: 2/4;
+    place-self: center center;
+  }
+
+  .landing_titel h2 {
+    color: #5c6336;
+    font-size: 4rem;
+    font-style: italic;
+    text-align: center;
+  }
+  .landing_titel h3 {
+    font-size: 2rem;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 3fr));
+  }
+
+  address:nth-child(1),
+  address h2 {
+    text-align: left;
+  }
+
+  address {
+    padding: 40px;
+  }
 }

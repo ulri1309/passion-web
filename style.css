@@ -151,6 +151,11 @@ h3 {
   color: #bb4726;
   text-align: center;
 }
+.facebook,
+.instagram {
+  width: 100px;
+  height: auto;
+}
 
 .RM {
   font-family: BebasNeue;
