@@ -40,6 +40,7 @@ h3 {
 a img {
   width: 20%;
   padding: 10px;
+  position: fixed;
 }
 
 .landing_h1 {
@@ -75,7 +76,6 @@ article img {
   object-fit: cover;
   width: 500px;
   height: 500px;
-  margin: 10px;
 }
 
 article h2,
