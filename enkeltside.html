@@ -13,17 +13,42 @@
     </header>
 
     <main>
+      <button class="tilbage">Back</button>
       <section class="grid_1-1">
-        <img src="" alt="" />
-        <h1></h1>
-        <h2></h2>
-        <h3></h3>
-        <p></p>
+        <img class="enkeltbillede" src="" alt="" />
+
+        <article>
+          <h1></h1>
+          <h2></h2>
+          <h3 class="h3_enkelt"></h3>
+          <p></p>
+        </article>
       </section>
-      <button>Tilbage</button>
     </main>
 
-    <footer>@Globe Travels</footer>
+    <footer>
+      <address>
+        <h2>GLOBE TRAVELS HEADQUARTERS</h2>
+        <p>+45 11 22 33 44</p>
+        <p>
+          Guldbergsgade 29N <br />
+          2200 Copenhagen N
+        </p>
+      </address>
+      <section class="socials">
+        <div class="socials">
+          <img src="billeder/facebook-logo-24.png" alt="face" />
+          <img src="billeder/instagram-logo-24.png" alt="insta" />
+        </div>
+      </section>
+      <section class="sporgsmal">
+        <h2>Questions?</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis
+          vel est maiores? Iste sint similique quo magni nulla debitis libero.
+        </p>
+      </section>
+    </footer>
     <script>
       // For at hente data fra linket i javascript.js
       const urlParams = new URLSearchParams(window.location.search);
@@ -59,7 +84,8 @@
       // funktion visHike viser enkelt objekt
       function visHike() {
         // Indhold i vores section
-        document.querySelector("img").src = "billeder/" + hike.billedfil;
+        document.querySelector(".enkeltbillede").src =
+          "billeder/" + hike.billedfil;
         document.querySelector("h1").textContent = hike.land;
         document.querySelector("h2").textContent = hike.mountain;
         document.querySelector("h3").textContent =

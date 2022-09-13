@@ -1,4 +1,9 @@
 /* Generelt */
+* {
+  margin: 0;
+  padding: 0;
+}
+
 main {
   max-width: 1200px;
   margin: 0 auto;
@@ -79,10 +84,13 @@ header h1 {
 /* design indhold - loop view */
 p {
   font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 15px;
 }
 h1,
-h2 {
+h2,
+h3 {
   font-family: BebasNeue;
+  margin-bottom: 15px;
 }
 
 /* hover box */
@@ -180,4 +188,73 @@ address h2,
   color: black;
 }
 
+<<<<<<< HEAD
 
+=======
+/****** ENKELTSIDE *******/
+
+.grid_1-1 {
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+}
+
+.grid_1-1 h1 {
+  text-align: center;
+  color: #5c6336;
+  font-size: 3rem;
+  /* order: 1; */
+}
+
+.grid_1-1 h2 {
+  color: #bb4726;
+  font-size: 2.5rem;
+}
+
+.grid_1-1 h3 {
+  font-size: 1.5rem;
+  color: #bb4726;
+}
+
+.grid_1-1 article h1 {
+  flex: 1;
+}
+
+.grid_1-1 {
+  background-color: white;
+  margin-bottom: 50px;
+}
+
+.tilbage {
+  font-family: BebasNeue;
+  color: white;
+  background-color: #5c6336;
+  padding: 10px 20px;
+  border-radius: 50px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 811px) {
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+
+  .grid_1-1 img {
+    grid-column: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .grid_1-1 article {
+    grid-column: 2;
+  }
+
+  .grid_1-1 h1 {
+    text-align: left;
+    /* margin-top: -8px; */
+  }
+}
+>>>>>>> 28c3be60a605773b31df8b4ecb1c16ed4e16bbb8
