@@ -159,3 +159,18 @@ h2 {
   border-radius: 20px;
   border-color: black solid 0.5px;
 }
+
+/* footer */
+footer {
+  background-color: #5c6336;
+  padding: 20px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+address h2,
+.sporgsmal h2 {
+  color: black;
+}
