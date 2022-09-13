@@ -14,8 +14,8 @@
 
     <main>
       <section class="grid_1-1">
-        <img src="" alt="" />
         <h1></h1>
+        <img src="" alt="" />
         <h2></h2>
         <h3></h3>
         <p></p>
@@ -62,13 +62,10 @@
         document.querySelector("img").src = "billeder/" + hike.billedfil;
         document.querySelector("h1").textContent = hike.land;
         document.querySelector("h2").textContent = hike.mountain;
-        document.querySelector("h3").textContent =
-          "Difficulty: " + hike.difficulty;
+        document.querySelector("h3").textContent = "Difficulty: " + hike.difficulty;
         document.querySelector("p").textContent = hike.longDescription;
         // Kalder funktion tilbageTilPersongalleri
-        document
-          .querySelector("button")
-          .addEventListener("click", tilbageTilHikes);
+        document.querySelector("button").addEventListener("click", tilbageTilHikes);
       }
 
       function tilbageTilHikes() {
