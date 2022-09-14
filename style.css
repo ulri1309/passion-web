@@ -48,6 +48,9 @@ a {
   color: #5c6336;
   text-decoration: none;
 }
+.footer_h2 {
+  color: white;
+}
 
 .navbar {
   min-height: 70px;
