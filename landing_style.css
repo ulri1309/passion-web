@@ -19,11 +19,13 @@
 /* From uiverse.io by @mrhyddenn */
 .mouse-btn {
   margin: 10px auto;
-  width: 40px;
-  height: 80px;
+  margin-top: 10px;
+  width: 36px;
+  height: 62px;
   border: 3px solid white;
   border-radius: 20px;
   display: flex;
+  margin-top: 3rem;
 }
 .container_mouse h1 {
   color: white;
