@@ -301,7 +301,7 @@ address:nth-child(1) {
 .sporgsmal {
   text-align: center;
 }
-address h2,
+.info_footer h2,
 .sporgsmal h2 {
   color: white;
 }
@@ -389,7 +389,7 @@ address h2,
   .grid_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-top: 9rem;
+    padding-top: 13rem;
     padding-bottom: 6rem;
   }
 
