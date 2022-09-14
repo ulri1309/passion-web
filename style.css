@@ -309,6 +309,7 @@ address h2,
 
 .grid_1-1 {
   margin-bottom: 20px;
+  margin-top: -90px;
 }
 .grid_1-1 img {
   margin-top: 100px;
@@ -346,6 +347,10 @@ address h2,
   flex: 1;
 }
 
+.banner {
+  position: sticky;
+}
+
 .tilbage {
   font-family: BebasNeue;
   color: white;
@@ -363,6 +368,11 @@ address h2,
   border-radius: 50px;
   margin-bottom: 10px;
   margin-left: 40%;
+  margin-top: 20px;
+}
+
+.sporgsmal p {
+  max-width: 25ch;
 }
 
 @media (min-width: 768px) {
@@ -370,6 +380,8 @@ address h2,
   .grid_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-top: 4rem;
+    padding-bottom: 10rem;
   }
 
   .grid_1-1 img {
@@ -408,5 +420,28 @@ address h2,
   }
   address:nth-child(1) {
     text-align: left;
+  }
+
+  .banner {
+    padding-bottom: 2rem;
+    position: sticky;
+  }
+
+  .logo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .sporgsmal {
+    margin-left: 5rem;
+  }
+
+  .sporgsmal p {
+    max-width: 25ch;
+  }
+
+  .socials {
+    margin-left: 2rem;
   }
 }
