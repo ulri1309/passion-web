@@ -116,7 +116,7 @@ a {
   .nav-menu {
     position: fixed;
     left: -100%;
-    top: 90px;
+    top: 135px;
     gap: 0;
     flex-direction: column;
     background-color: white;
@@ -290,6 +290,11 @@ footer {
   align-items: center;
   margin-top: 30px;
 }
+
+footer p {
+  color: white;
+}
+
 address:nth-child(1) {
   text-align: center;
 }
@@ -298,11 +303,7 @@ address:nth-child(1) {
 }
 address h2,
 .sporgsmal h2 {
-  color: black;
-}
-address h2,
-.sporgsmal h2 {
-  color: black;
+  color: white;
 }
 
 /****** ENKELTSIDE *******/
@@ -348,7 +349,15 @@ address h2,
 }
 
 .banner {
-  position: sticky;
+  position: relative;
+}
+
+.bg-dark {
+  background: transparent !important;
+}
+
+.bg-dark.scrolled {
+  background-color: white !important;
 }
 
 .tilbage {
@@ -380,8 +389,8 @@ address h2,
   .grid_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-top: 4rem;
-    padding-bottom: 10rem;
+    padding-top: 9rem;
+    padding-bottom: 6rem;
   }
 
   .grid_1-1 img {
@@ -423,8 +432,8 @@ address h2,
   }
 
   .banner {
-    padding-bottom: 2rem;
-    position: sticky;
+    position: fixed;
+    padding-top: 5rem;
   }
 
   .logo {
