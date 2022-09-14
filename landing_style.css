@@ -88,7 +88,7 @@ h3 {
 .landing_titel h2 {
   color: #5c6336;
   font-size: 3rem;
-  font-style: italic;
+  /* font-style: italic; */
   text-align: center;
   padding-top: 90px;
 }
@@ -134,7 +134,6 @@ button {
   border-radius: 20px;
 }
 
-
 .tophikes {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 3fr));
@@ -164,8 +163,6 @@ button {
     font-size: 2rem;
   }
 
-  
-  
   address:nth-child(1),
   address h2 {
     text-align: left;
