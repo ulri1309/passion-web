@@ -437,6 +437,9 @@ address:nth-child(1) {
 
   .banner {
     position: fixed;
+  }
+  .banner_enkelt {
+    position: fixed;
     padding-top: 5rem;
   }
 
