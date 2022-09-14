@@ -135,7 +135,7 @@ a {
   .nav-menu {
     position: fixed;
     left: -100%;
-    top: 135px;
+    top: 89px;
     gap: 0;
     flex-direction: column;
     background-color: white;
@@ -374,7 +374,7 @@ address:nth-child(1) {
 }
 
 .banner {
-  position: relative;
+  position: fixed;
 }
 
 .bg-dark {

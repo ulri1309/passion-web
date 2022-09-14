@@ -19,11 +19,13 @@
 /* From uiverse.io by @mrhyddenn */
 .mouse-btn {
   margin: 10px auto;
-  width: 40px;
-  height: 80px;
+  margin-top: 10px;
+  width: 36px;
+  height: 62px;
   border: 3px solid white;
   border-radius: 20px;
   display: flex;
+  margin-top: 3rem;
 }
 .container_mouse h1 {
   color: white;
@@ -88,7 +90,7 @@ h3 {
 .landing_titel h2 {
   color: #5c6336;
   font-size: 3rem;
-  font-style: italic;
+  /* font-style: italic; */
   text-align: center;
   padding-top: 90px;
 }
@@ -134,7 +136,6 @@ button {
   border-radius: 20px;
 }
 
-
 .tophikes {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 3fr));
@@ -164,8 +165,6 @@ button {
     font-size: 2rem;
   }
 
-  
-  
   address:nth-child(1),
   address h2 {
     text-align: left;
