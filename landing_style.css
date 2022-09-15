@@ -131,6 +131,22 @@ article p {
   border-radius: 20px;
 }
 
+/* IPAD-VERSION */
+
+@media (min-width: 768px) {
+  .landing_h1 {
+    color: white;
+    font-size: 6rem;
+    text-align: end;
+    place-self: end;
+    grid-column: 2;
+    grid-row: 2;
+    padding-right: 20px;
+    font-style: italic;
+    max-width: 9ch;
+  }
+}
+
 /* desktop media query */
 
 @media (min-width: 870px) {
@@ -153,22 +169,5 @@ article p {
   }
   .landing_titel h3 {
     font-size: 2rem;
-  }
-
-}
-
-/* IPAD-VERSION */
-
-@media (min-width: 768px) {
-  .landing_h1 {
-    color: white;
-    font-size: 6rem;
-    text-align: end;
-    place-self: end;
-    grid-column: 2;
-    grid-row: 2;
-    padding-right: 20px;
-    font-style: italic;
-    max-width: 9ch;
   }
 }

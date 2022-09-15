@@ -319,10 +319,11 @@ footer p {
   color: white;
   font-style: italic;
 }
-.footer_div, .sporgsmal {
+.footer_div,
+.sporgsmal {
   text-align: center;
 }
- 
+
 .info_footer h2,
 .sporgsmal h2 {
   color: white;
