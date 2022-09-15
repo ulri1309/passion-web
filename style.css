@@ -437,8 +437,15 @@ footer p {
     display: block;
   }
 
+  .button_div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1/2;
+    grid-row: 1;
+  }
   .tilbage_mobil {
-    display: none;
+    margin-left: 0;
+    width: 110px;
   }
 
   /* Loop view */
