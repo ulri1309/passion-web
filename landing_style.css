@@ -78,13 +78,14 @@ h3 {
 
 .landing_h1 {
   color: white;
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: end;
   place-self: end;
   grid-column: 2;
   grid-row: 2;
   padding-right: 20px;
-  text-shadow: black 5px 5px 5px;
+  font-style: italic;
+  max-width: 9ch;
 }
 
 .landing_titel h2 {
@@ -142,14 +143,14 @@ button {
   gap: 20px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 870px) {
   .background-image {
     background-position: top;
     grid-template-columns: 1fr;
   }
   .landing_h1 {
     text-align: center;
-    font-size: 6rem;
+    font-size: 7rem;
     grid-column: 1/1;
     grid-row: 2/4;
     place-self: center center;
@@ -172,5 +173,21 @@ button {
 
   address {
     padding: 40px;
+  }
+}
+
+/* IPAD-VERSION */
+
+@media (min-width: 768px) {
+  .landing_h1 {
+    color: white;
+    font-size: 6rem;
+    text-align: end;
+    place-self: end;
+    grid-column: 2;
+    grid-row: 2;
+    padding-right: 20px;
+    font-style: italic;
+    max-width: 9ch;
   }
 }
