@@ -319,16 +319,14 @@ footer p {
   color: white;
   font-style: italic;
 }
-
-address:nth-child(1) {
+.footer_div, .sporgsmal {
   text-align: center;
 }
-.sporgsmal {
-  text-align: center;
-}
+ 
 .info_footer h2,
 .sporgsmal h2 {
   color: white;
+  font-style: italic;
 }
 
 /****** ENKELTSIDE *******/
