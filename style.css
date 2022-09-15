@@ -348,8 +348,9 @@ footer p {
 .grid_1-1 h1 {
   text-align: left;
   color: #5c6336;
-  font-size: 3rem;
+  font-size: 4rem;
   padding-left: 20px;
+  font-style: italic;
 }
 .grid_1-1 p {
   padding-inline: 20px;
