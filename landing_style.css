@@ -154,7 +154,7 @@ article p {
   }
 }
 
-/* desktop media query */
+/* desktop-version  */
 
 @media (min-width: 870px) {
   .background-image {
