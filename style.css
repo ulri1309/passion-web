@@ -169,8 +169,6 @@ a {
 nav {
   list-style: none;
   line-height: 2rem;
-  /* display: inline; */
-  padding-bottom: 20px;
 }
 
 button {
@@ -465,6 +463,7 @@ footer p {
 
   .banner {
     position: fixed;
+    padding-right: 115px;
   }
   .banner_enkelt {
     position: fixed;
