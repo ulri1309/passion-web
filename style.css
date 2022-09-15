@@ -115,7 +115,7 @@ a {
   }
 
   .logo img {
-    width: 20%;
+    width: 30%;
   }
   .navbar {
     padding: 20px;
@@ -450,7 +450,7 @@ footer p {
 
   /* Loop view */
   .logo > img:nth-child(1) {
-    max-width: 10%;
+    max-width: 20%;
     padding-top: 10px;
   }
 
