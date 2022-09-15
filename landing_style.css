@@ -70,10 +70,11 @@
   text-align: end;
   place-self: end;
   grid-column: 2;
-  grid-row: 2;
+  grid-row: 3;
   padding-right: 20px;
   font-style: italic;
   max-width: 9ch;
+  text-shadow: #5c6336 1px 1px 1px;
 }
 
 .landing_titel h2 {
@@ -148,6 +149,7 @@ article p {
     padding-right: 20px;
     font-style: italic;
     max-width: 9ch;
+    padding-right: 40px;
   }
 }
 
