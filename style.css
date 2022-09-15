@@ -108,8 +108,8 @@ a {
   background-color: #5c6336;
   border-radius: 15px;
 }
-
-@media (max-width: 768px) {
+/* hamburger menu viser sig kun indtil den kommer over ipad størrelse */
+@media (max-width: 810px) {
   .logo {
     margin-inline: 0;
   }
