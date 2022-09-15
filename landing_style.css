@@ -131,6 +131,10 @@ article p {
   border-radius: 20px;
 }
 
+.text-center button:hover {
+  color: #bb4726;
+}
+
 /* IPAD-VERSION */
 
 @media (min-width: 768px) {
